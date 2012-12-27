@@ -1,0 +1,50 @@
+
+! Escape and Control keys historically belong on the left side, right
+! next to the "A" key in the home row. Nowadays they have drifted away
+! from the home row, which adds wear and tear to your fingers and steals
+! valuable time.
+!
+! To get back to this key layout, I've remapped, on my IBM PC compatible 
+! keyboard, the Caps Lock key to Control, and the Tab key to Escape. 
+!
+! Aleksey Tsalolikhin
+! aleksey@verticalsysadmin.com
+! 6 Sep 2012
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Set the right Windows key to be a modifier key (control)
+!
+keycode 116 = Control_R
+add Control = Control_R
+!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! make Caps Lock physical key into the Control logical key
+!
+clear Lock
+!    ‘‘clear Lock’’ will remove all any keys that were bound to  the
+!    shift lock modifier.
+!
+add control = Caps_Lock
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Swap the Escape and Tab keys
+!
+keycode 23 = Escape
+keycode 9 = Tab
+!
+! note: use "xev" to get keycodes for physical keys
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! note: I physically removed my left control key (in the botom left of my keyboard)
+!       to break my muscle memory habit of using it, and to get used to using the
+!       former Caps Lock key instead.
+
+
+! note: use "xmodmap -e '...'" to run an xmodmap command from the command line
