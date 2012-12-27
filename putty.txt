@@ -1,0 +1,1 @@
+Use the putty.reg from Jeff Blaine, it includes Solarized and Dag Wieers' settings
