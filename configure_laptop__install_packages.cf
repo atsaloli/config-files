@@ -1,0 +1,19 @@
+# CFEngine policy to install packages I want
+
+bundle agent configure_laptop__install_packages {
+
+vars:
+  "desired_debian_packages"
+              slist => {
+                          "libjson-perl", "libwww-perl", "libterm-readline-gnu-perl",  # for cf-sketch
+                          "vim", "git", "rcs",
+                       };
+                         
+packages:
+  "$(desired_debian_packages)"
+     package_policy => "add",
+     package_method => generic,
+     handle => "install_packages__install_desired_debian_packages",
+     comment => "make sure all needed packages are installed";
+
+}
