@@ -7,6 +7,9 @@ vars:
               slist => {
                           "libjson-perl", "libwww-perl", "libterm-readline-gnu-perl",  # for cf-sketch
                           "vim", "git", "rcs",
+                          "libxxf86vm1", "ia32-libs", "libc6-i386", # run 32-bit binaries -- needed by f.lux
+
+
                        };
                          
 packages:
