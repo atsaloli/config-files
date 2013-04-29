@@ -8,6 +8,7 @@ vars:
                           "libjson-perl", "libwww-perl", "libterm-readline-gnu-perl",  # for cf-sketch
                           "vim", "git", "rcs", "lynx", "colordiff", "imagemagick",
                           "libxxf86vm1", "ia32-libs", "libc6-i386", # run 32-bit binaries -- needed by f.lux
+                          "evince",
 
 
                        };
@@ -15,7 +16,7 @@ vars:
   "desired_redhat_packages"
               slist => {
                         
-                          "vim", "git", "rcs", "lynx", "colordiff", "ImageMagick",
+                          "vim", "git", "rcs", "lynx", "colordiff", "ImageMagick", "evince"
 
                        };
                          
