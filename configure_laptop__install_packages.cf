@@ -9,6 +9,7 @@ vars:
                           "vim", "git", "rcs", "lynx", "colordiff", "imagemagick",
                           "libxxf86vm1", "ia32-libs", "libc6-i386", # run 32-bit binaries -- needed by f.lux
                           "evince", # to view PDFs
+                          "graphviz", # to make graph diagrams
                           "libreoffice-impress", # to view PowerPoint presentations
 
 
@@ -19,6 +20,7 @@ vars:
                         
                           "vim", "git", "rcs", "lynx", "colordiff", "ImageMagick", 
                           "evince", # to view PDFs
+                          "graphviz", # to make graph diagrams
                           "libreoffice-impress", # to view PowerPoint presentations
 
                        };
