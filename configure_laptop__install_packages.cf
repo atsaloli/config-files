@@ -11,6 +11,7 @@ vars:
                           "evince", # to view PDFs
                           "graphviz", # to make graph diagrams
                           "libreoffice-impress", # to view PowerPoint presentations
+                          "pcregrep",
 
 
                        };
@@ -22,6 +23,7 @@ vars:
                           "evince", # to view PDFs
                           "graphviz", # to make graph diagrams
                           "libreoffice-impress", # to view PowerPoint presentations
+                          "pcregrep",
 
                        };
                          
