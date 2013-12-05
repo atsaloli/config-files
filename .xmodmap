@@ -1,4 +1,3 @@
-
 ! Escape and Control keys historically belong on the left side, right
 ! next to the "A" key in the home row. Nowadays they have drifted away
 ! from the home row, which adds wear and tear to your fingers and steals
@@ -14,9 +13,10 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Set the right Windows key to be a modifier key (control)
 !
-keycode 116 = Control_R
-add Control = Control_R
-!
+!keycode 116 = Control_R
+!add Control = Control_R
+!!the above doesn't work on Ubuntu 13... but the below does:
+xmodmap -e 'keycode 66 = Control_L'
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
