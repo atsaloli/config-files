@@ -1,5 +1,15 @@
 # CFEngine policy to install packages I want
 
+
+
+body common control {
+
+	#inputs => { "/var/cfengine/masterfiles/libraries/cfengine_stdlib.cf" }; # for version 3.4 and lower
+	inputs => { "$(sys.libdir)/stdlib.cf" }; # for version 3.5 and higher
+        bundlesequence => { "configure_laptop__install_packages" };
+}
+
+
 bundle agent configure_laptop__install_packages {
 
 vars:
