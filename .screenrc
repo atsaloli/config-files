@@ -1,0 +1,8 @@
+# redefine the screen command character from ctrl-A to Ctrl-Space to reduce stress and twisting on my left hand
+escape "^  "
+
+# start ssh launcher loop
+screen -t launcher /bin/sh -c 'while true; do echo -n "Hostname: "; read host;  screen -t $host ssh $host; clear; done'
+
+# bind ctrl-K to the command to switch to window 0 which contains the SSH launcher
+bindkey "\013" select 0
