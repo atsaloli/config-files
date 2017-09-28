@@ -6,4 +6,4 @@ alias gp='git push'
 alias gs='git status'
 alias gc='git commit'
 alias gd='git diff'
-
+alias g='gc -amx; gp'
