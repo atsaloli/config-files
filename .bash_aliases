@@ -4,7 +4,7 @@ alias psql='PAGER=less LESS=-FXSe psql'
 
 # git aliases
 alias gp='git push'
-alias gs='git status'
+alias st='git status'
 alias gc='git commit'
 alias gd='git diff'
 alias g='gc -amx; gp'
