@@ -13,7 +13,7 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 au BufRead,BufNewFile *.cf set ft=cf3
 
 " remove "created by ... on ..." from GitLab Merge Request / Issue  copy pasta
-:imap ,v )<ESC>?created by<CR>DJ
+:imap ,v )<ESC>?created by<CR>DJxxo
 
 " Trigger paste mode automatically when pasting via the terminal
 " https://github.com/ryanpcmcquen/fix-vim-pasting/blob/master/fix-vim-pasting.vim
