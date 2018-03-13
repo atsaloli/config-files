@@ -8,6 +8,8 @@ alias st='git status'
 alias gc='git commit'
 alias gd='git diff'
 alias g='gc -amx; gp'
-alias vig='vim $(git diff HEAD^ HEAD --name-only)'
+alias gb='git checkout master; git pull; git checkout -b $1'
 alias gtop='cd "$(git rev-parse --show-toplevel)"' # go to the top of your git repo
+
+alias vig='vim $(git diff HEAD^ HEAD --name-only)'
 
