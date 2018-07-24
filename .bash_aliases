@@ -11,5 +11,5 @@ alias g='gc -amx; gp'
 alias nb='git checkout master; git pull; git checkout -b $1' # new git branch
 alias gt='cd "$(git rev-parse --show-toplevel)"' # go to the top of your git repo
 
-alias vig='vim $(git diff HEAD^ HEAD --name-only)'
+alias vig='vim $(git log -1 --name-only --relative --pretty= .)'
 
