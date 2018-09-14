@@ -3,6 +3,8 @@ alias brownnoise2='play -q -c 2 -n synth brownnoise band -n 1600 1500 tremolo .1
 alias psql='PAGER=less LESS=-FXSe psql'
 
 # git aliases
+alias gs='git status'
+alias gm='git rebase -i master'
 alias gp='git push'
 alias st='git status'
 alias gc='git commit'
