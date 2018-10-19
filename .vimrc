@@ -36,7 +36,10 @@ match ErrorMsg '\%>120v.\+'
 match ErrorMsg '\s\+$'
 
 
-" Ctrl-J and Ctrl-K to scroll text past the cursor.
+" Ctrl-J and Ctrl-K to scroll text past the cursor
 " See https://vi.stackexchange.com/questions/15200/make-ctrl-j-and-ctrl-k-work-like-they-do-in-less/15202#15202
 :nnoremap <expr> <c-j> winline() == winheight(0) ? "\<c-e>j" : "j\<c-e>"
 :nnoremap <expr> <c-k> winline() == 1 ? "\<c-y>k" : "k\<c-y>"
+
+" go back to previous buffer using BACKSPACE
+:map <BACKSPACE> :bp<CR>
