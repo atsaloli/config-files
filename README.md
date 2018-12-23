@@ -1,4 +1,1 @@
-config-files
-============
-
-personal config files
+Moved to https://gitlab.com/atsaloli/config-files
